@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0DL342SET1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0DL342SET1');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2cerezas — Guías honestas de juguetes sexuales</title>
+<meta name="description" content="Comparativas y guías honestas de juguetes sexuales. Sin filtros, sin tabúes. Encuentra lo que de verdad funciona.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:        #160810;
+    --surface:   #21101a;
+    --card:      #2b1420;
+    --border:    #3d1e2e;
+    --cherry:    #d63a5a;
+    --cherry-lo: #d63a5a18;
+    --cherry-md: #d63a5a44;
+    --blush:     #e8a0b0;
+    --cream:     #f5ece8;
+    --muted:     #9a7a85;
+    --gold:      #d4956a;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--cream);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(22,8,16,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 5vw;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 60px;
+  }
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem; font-weight: 900;
+    color: var(--cream); text-decoration: none;
+    display: flex; align-items: center; gap: 8px;
+    letter-spacing: -0.01em;
+  }
+  .logo span { color: var(--cherry); }
+  .nav-links {
+    display: flex; gap: 28px; list-style: none;
+  }
+  .nav-links a {
+    color: var(--muted); text-decoration: none;
+    font-size: 0.85rem; font-weight: 500; letter-spacing: 0.04em;
+    text-transform: uppercase; transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--cream); }
+  .nav-cta {
+    background: var(--cherry); color: #fff;
+    padding: 8px 18px; border-radius: 100px;
+    font-size: 0.82rem; font-weight: 600;
+    text-decoration: none; letter-spacing: 0.03em;
+    transition: opacity 0.2s;
+  }
+  .nav-cta:hover { opacity: 0.85; }
+  .hamburger { display: none; background: none; border: none; cursor: pointer; }
+  .hamburger span { display: block; width: 22px; height: 2px; background: var(--cream); margin: 5px 0; transition: 0.3s; }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 90vh;
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 80px 5vw 60px;
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 60% 60% at 80% 40%, #d63a5a22 0%, transparent 70%),
+                radial-gradient(ellipse 40% 40% at 20% 80%, #d4956a12 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .hero-eyebrow {
+    font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--cherry);
+    margin-bottom: 22px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .hero-eyebrow::before {
+    content: ''; display: block;
+    width: 30px; height: 1px; background: var(--cherry);
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.8rem, 7vw, 5.5rem);
+    font-weight: 900; line-height: 1.05;
+    letter-spacing: -0.02em;
+    max-width: 780px;
+    margin-bottom: 28px;
+  }
+  .hero h1 em {
+    font-style: italic; color: var(--cherry);
+  }
+  .hero-sub {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: var(--muted); max-width: 520px;
+    font-weight: 300; margin-bottom: 40px;
+    line-height: 1.7;
+  }
+  .hero-actions {
+    display: flex; gap: 14px; flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+  .btn-primary {
+    background: var(--cherry); color: #fff;
+    padding: 14px 30px; border-radius: 100px;
+    font-size: 0.95rem; font-weight: 600;
+    text-decoration: none; transition: transform 0.2s, opacity 0.2s;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-primary:hover { opacity: 0.9; transform: translateY(-1px); }
+  .btn-ghost {
+    background: transparent; color: var(--cream);
+    padding: 14px 30px; border-radius: 100px;
+    font-size: 0.95rem; font-weight: 500;
+    text-decoration: none; border: 1px solid var(--border);
+    transition: border-color 0.2s;
+  }
+  .btn-ghost:hover { border-color: var(--blush); }
+
+  .hero-pills {
+    display: flex; flex-wrap: wrap; gap: 10px;
+  }
+  .pill {
+    background: var(--card); border: 1px solid var(--border);
+    color: var(--muted); padding: 7px 16px; border-radius: 100px;
+    font-size: 0.82rem; text-decoration: none;
+    transition: all 0.2s;
+  }
+  .pill:hover {
+    border-color: var(--cherry-md); color: var(--cream);
+  }
+
+  /* ── SECTION WRAPPER ── */
+  section { padding: 80px 5vw; }
+  .section-label {
+    font-size: 0.75rem; font-weight: 700; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--cherry);
+    margin-bottom: 10px;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 700; line-height: 1.15;
+    margin-bottom: 40px; letter-spacing: -0.01em;
+  }
+  .section-title em { font-style: italic; color: var(--cherry); }
+
+  /* ── DIVIDER ── */
+  hr.divider {
+    border: none; border-top: 1px solid var(--border);
+    margin: 0 5vw;
+  }
+
+  /* ── TOP PRODUCTOS ── */
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+  }
+  .product-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 16px; padding: 24px;
+    transition: border-color 0.2s, transform 0.2s;
+    text-decoration: none; color: inherit;
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .product-card:hover {
+    border-color: var(--cherry-md);
+    transform: translateY(-3px);
+  }
+  .product-rank {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem; font-weight: 900;
+    color: var(--cherry); line-height: 1;
+    opacity: 0.35;
+  }
+  .product-category {
+    font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--cherry); opacity: 0.8;
+  }
+  .product-name {
+    font-size: 1.05rem; font-weight: 600; color: var(--cream);
+    line-height: 1.3;
+  }
+  .product-desc {
+    font-size: 0.88rem; color: var(--muted); line-height: 1.65;
+    flex: 1;
+  }
+  .product-footer {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; border-top: 1px solid var(--border);
+  }
+  .product-stars {
+    color: var(--gold); font-size: 0.82rem; letter-spacing: 1px;
+  }
+  .product-link {
+    font-size: 0.8rem; font-weight: 600; color: var(--cherry);
+    text-decoration: none;
+    display: flex; align-items: center; gap: 4px;
+  }
+  .product-link::after { content: '→'; }
+
+  /* ── BLOG ── */
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+  }
+  .article-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 16px; overflow: hidden;
+    text-decoration: none; color: inherit;
+    transition: border-color 0.2s, transform 0.2s;
+    display: flex; flex-direction: column;
+  }
+  .article-card:hover {
+    border-color: var(--cherry-md);
+    transform: translateY(-3px);
+  }
+  .article-img {
+    height: 160px; background: var(--surface);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 3rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .article-body { padding: 22px; flex: 1; display: flex; flex-direction: column; gap: 10px; }
+  .article-tag {
+    font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--cherry);
+  }
+  .article-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem; font-weight: 700;
+    color: var(--cream); line-height: 1.3;
+  }
+  .article-excerpt {
+    font-size: 0.875rem; color: var(--muted);
+    line-height: 1.65; flex: 1;
+  }
+  .article-meta {
+    font-size: 0.78rem; color: var(--muted);
+    padding-top: 12px; border-top: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .read-more {
+    color: var(--cherry); font-weight: 600; font-size: 0.8rem;
+  }
+
+  /* ── CONSULTORIO ── */
+  .consultorio {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .consultorio-inner {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+    align-items: center;
+  }
+  .consultorio-text { display: flex; flex-direction: column; gap: 20px; }
+  .consultorio-text p { color: var(--muted); font-size: 1rem; line-height: 1.75; }
+  .consultorio-questions { display: flex; flex-direction: column; gap: 12px; }
+  .question-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 16px 20px;
+    font-size: 0.9rem; color: var(--muted); line-height: 1.5;
+    position: relative; padding-left: 40px;
+  }
+  .question-card::before {
+    content: '?';
+    position: absolute; left: 14px; top: 15px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem; font-weight: 900;
+    color: var(--cherry); opacity: 0.6;
+  }
+
+  /* ── NEWSLETTER ── */
+  .newsletter-inner {
+    max-width: 560px; margin: 0 auto; text-align: center;
+  }
+  .newsletter-inner .section-label { text-align: center; }
+  .newsletter-inner .section-title { margin-bottom: 16px; }
+  .newsletter-inner p { color: var(--muted); margin-bottom: 30px; font-size: 0.95rem; }
+  .newsletter-form {
+    display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;
+  }
+  .newsletter-form input {
+    flex: 1; min-width: 220px;
+    background: var(--card); border: 1px solid var(--border);
+    color: var(--cream); padding: 13px 20px; border-radius: 100px;
+    font-family: 'DM Sans', sans-serif; font-size: 0.9rem;
+    outline: none; transition: border-color 0.2s;
+  }
+  .newsletter-form input:focus { border-color: var(--cherry-md); }
+  .newsletter-form input::placeholder { color: var(--muted); }
+  .newsletter-form button {
+    background: var(--cherry); color: #fff; border: none;
+    padding: 13px 26px; border-radius: 100px;
+    font-family: 'DM Sans', sans-serif; font-size: 0.9rem;
+    font-weight: 600; cursor: pointer; transition: opacity 0.2s;
+  }
+  .newsletter-form button:hover { opacity: 0.85; }
+  .newsletter-note {
+    font-size: 0.75rem; color: var(--muted); margin-top: 14px;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--surface); border-top: 1px solid var(--border);
+    padding: 50px 5vw 30px;
+  }
+  .footer-top {
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px;
+    margin-bottom: 40px;
+  }
+  .footer-brand { max-width: 280px; }
+  .footer-brand .logo { margin-bottom: 12px; display: inline-flex; }
+  .footer-brand p { font-size: 0.85rem; color: var(--muted); line-height: 1.7; }
+  .footer-col h4 {
+    font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--cream);
+    margin-bottom: 14px;
+  }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+  .footer-col a {
+    font-size: 0.875rem; color: var(--muted); text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-col a:hover { color: var(--cream); }
+  .footer-bottom {
+    border-top: 1px solid var(--border); padding-top: 24px;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+    font-size: 0.78rem; color: var(--muted);
+  }
+  .footer-disclaimer {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 10px; padding: 14px 18px;
+    font-size: 0.78rem; color: var(--muted); line-height: 1.6;
+    margin-bottom: 24px;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .nav-links, .nav-cta { display: none; }
+    .hamburger { display: block; }
+    .consultorio-inner { grid-template-columns: 1fr; gap: 36px; }
+    .hero { min-height: 80vh; padding-top: 50px; }
+    .hero h1 { font-size: 2.6rem; }
+    section { padding: 60px 5vw; }
+  }
+  @media (max-width: 480px) {
+    .hero h1 { font-size: 2.2rem; }
+    .hero-actions { flex-direction: column; }
+    .btn-primary, .btn-ghost { text-align: center; justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="logo" href="/">🍒 <span>2</span>cerezas</a>
+  <ul class="nav-links">
+    <li><a href="/comparativas/">Comparativas</a></li>
+    <li><a href="/guias/como-elegir-primer-juguete-sexual/">Guías</a></li>
+    <li><a href="#consultorio">Consultorio</a></li>
+    <li><a href="/guias/como-elegir-primer-juguete-sexual/">Guías</a></li>
+  </ul>
+  <a class="nav-cta" href="/comparativas/">Ver rankings</a>
+  <button class="hamburger" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <p class="hero-eyebrow">Guías honestas · Sin filtros · Sin tabúes</p>
+  <h1>Encuentra lo que<br><em>de verdad</em> funciona.</h1>
+  <p class="hero-sub">
+    Comparativas reales, opiniones sin publicidad encubierta y un consultorio donde puedes preguntar lo que no te atreves a buscar en Google.
+  </p>
+  <div class="hero-actions">
+    <a class="btn-primary" href="/comparativas/">🍒 Ver los mejores rankings</a>
+    <a class="btn-ghost" href="/#consultorio">Ir al consultorio</a>
+  </div>
+  <div class="hero-pills">
+    <a class="pill" href="/comparativas/mejor-succionador-clitoris-2026/">Succionadores</a>
+    <a class="pill" href="/comparativas/">Vibradores</a>
+    <a class="pill" href="/comparativas/">Para parejas</a>
+    <a class="pill" href="/comparativas/">Para ellos</a>
+    <a class="pill" href="/comparativas/">Con app</a>
+    <a class="pill" href="/guias/como-elegir-primer-juguete-sexual/">Primeras veces</a>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- TOP PRODUCTOS -->
+<section id="comparativas">
+  <p class="section-label">Lo más buscado</p>
+  <h2 class="section-title">Los rankings que más <em>funcionan</em></h2>
+  <div class="products-grid">
+
+    <a class="product-card" href="#">
+      <div class="product-rank">01</div>
+      <p class="product-category">Succionadores</p>
+      <h3 class="product-name">Mejor succionador de clítoris 2025</h3>
+      <p class="product-desc">Comparamos los 7 más vendidos en Amazon. El ganador no es el que más publicidad tiene.</p>
+      <div class="product-footer">
+        <span class="product-stars">★★★★★</span>
+        <span class="product-link">Ver ranking</span>
+      </div>
+    </a>
+
+    <a class="product-card" href="#">
+      <div class="product-rank">02</div>
+      <p class="product-category">Vibradores</p>
+      <h3 class="product-name">Top 5 vibradores con app para 2025</h3>
+      <p class="product-desc">Lovense, We-Vibe, OhMiBod. Cuál controla mejor desde el móvil y cuál se cae a los 5 minutos.</p>
+      <div class="product-footer">
+        <span class="product-stars">★★★★☆</span>
+        <span class="product-link">Ver ranking</span>
+      </div>
+    </a>
+
+    <a class="product-card" href="#">
+      <div class="product-rank">03</div>
+      <p class="product-category">Parejas</p>
+      <h3 class="product-name">Mejores juguetes para parejas principiantes</h3>
+      <p class="product-desc">Para los que quieren añadir algo nuevo sin que se convierta en un examen de tecnología.</p>
+      <div class="product-footer">
+        <span class="product-stars">★★★★★</span>
+        <span class="product-link">Ver ranking</span>
+      </div>
+    </a>
+
+    <a class="product-card" href="#">
+      <div class="product-rank">04</div>
+      <p class="product-category">Para ellos</p>
+      <h3 class="product-name">Guía de juguetes masculinos — por dónde empezar</h3>
+      <p class="product-desc">El nicho más olvidado del sector. Tenga, Fleshlight, estimuladores prostáticos. Todo explicado sin rodeos.</p>
+      <div class="product-footer">
+        <span class="product-stars">★★★★☆</span>
+        <span class="product-link">Ver guía</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- BLOG -->
+<section id="blog">
+  <p class="section-label">Del blog</p>
+  <h2 class="section-title">Artículos que te <em>ahorran tiempo</em></h2>
+  <div class="blog-grid">
+
+    <a class="article-card" href="/guias/como-elegir-primer-juguete-sexual/">
+      <div class="article-img">🌸</div>
+      <div class="article-body">
+        <span class="article-tag">Guía para principiantes</span>
+        <h3 class="article-title">Cómo elegir tu primer juguete sexual sin agobiarte</h3>
+        <p class="article-excerpt">Tanta oferta puede abrumar. Te damos un filtro de tres preguntas que reduce las opciones a dos o tres productos concretos.</p>
+        <div class="article-meta">
+          <span>8 min de lectura</span>
+          <span class="read-more">Leer →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="article-card" href="#">
+      <div class="article-img">⚡</div>
+      <div class="article-body">
+        <span class="article-tag">Comparativa</span>
+        <h3 class="article-title">Satisfyer Pro 2 vs Womanizer Premium 2: cuál vale lo que cuesta</h3>
+        <p class="article-excerpt">Los dos más vendidos. Uno cuesta el doble. ¿Merece la pena la diferencia? Spoiler: depende de una sola cosa.</p>
+        <div class="article-meta">
+          <span>12 min de lectura</span>
+          <span class="read-more">Leer →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="article-card" href="#">
+      <div class="article-img">💫</div>
+      <div class="article-body">
+        <span class="article-tag">Parejas</span>
+        <h3 class="article-title">5 formas de introducir juguetes en pareja sin que sea raro</h3>
+        <p class="article-excerpt">La conversación importa tanto como el producto. Cómo plantearlo, qué decir y qué opciones son más fáciles de introducir.</p>
+        <div class="article-meta">
+          <span>6 min de lectura</span>
+          <span class="read-more">Leer →</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- CONSULTORIO -->
+<section class="consultorio" id="consultorio">
+  <div class="consultorio-inner">
+    <div class="consultorio-text">
+      <p class="section-label">El consultorio</p>
+      <h2 class="section-title">Pregunta lo que no<br>te atreves a <em>googlear</em></h2>
+      <p>Hay preguntas que no se hacen en voz alta. Las típicas de "¿es normal que...?" o "¿esto es para mí?". Aquí puedes preguntarlas sin miedo y sin juicio.</p>
+      <p>Respondemos todas las semanas con rigor y sin tapujos.</p>
+      <a class="btn-primary" href="#" style="align-self:flex-start; margin-top:8px;">Hacer una pregunta</a>
+    </div>
+    <div class="consultorio-questions">
+      <div class="question-card">¿Es normal no haber tenido un orgasmo con penetración? Llevo años creyendo que algo no funciona bien.</div>
+      <div class="question-card">Mi pareja quiere probar un vibrador juntos pero yo no sé cómo plantearlo sin que sea incómodo.</div>
+      <div class="question-card">¿Hay diferencia real entre un succionador de 25€ y uno de 120€, o es solo marketing?</div>
+      <div class="question-card">¿Los juguetes prostáticos son solo para hombres gay? Pregunta de un chico hetero con curiosidad.</div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- NEWSLETTER -->
+<section>
+  <div class="newsletter-inner">
+    <p class="section-label">Newsletter</p>
+    <h2 class="section-title">Sin spam.<br><em>Solo lo bueno.</em></h2>
+    <p>Novedades, comparativas nuevas y ofertas de Amazon que merece la pena mirar. Una vez al mes, sin más.</p>
+    <form class="newsletter-form" onsubmit="return false;">
+      <input type="email" placeholder="tu@email.com">
+      <button type="submit">Apuntarme</button>
+    </form>
+    <p class="newsletter-note">Sin spam. Baja cuando quieras. Tus datos no se venden a nadie.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-disclaimer">
+    🔗 <strong>Aviso de afiliados:</strong> 2cerezas.es participa en el Programa de Afiliados de Amazon EU, un programa de publicidad para afiliados. Algunos enlaces de esta web son de afiliado, lo que significa que podemos recibir una comisión si realizas una compra, sin coste adicional para ti.
+  </div>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a class="logo" href="/">🍒 <span>2</span>cerezas</a>
+      <p>Guías honestas de juguetes sexuales. Sin filtros, sin tabúes, sin publicidad encubierta.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Categorías</h4>
+      <ul>
+        <li><a href="/comparativas/mejor-succionador-clitoris-2026/">Succionadores</a></li>
+        <li><a href="/comparativas/">Vibradores</a></li>
+        <li><a href="/comparativas/">Para parejas</a></li>
+        <li><a href="/comparativas/">Para ellos</a></li>
+        <li><a href="/comparativas/">Con app</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>La web</h4>
+      <ul>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Consultorio</a></li>
+        <li><a href="#">Comparativas</a></li>
+        <li><a href="#">Sobre 2cerezas</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="/aviso-legal/">Aviso legal</a></li>
+        <li><a href="/aviso-legal/#privacidad">Política de privacidad</a></li>
+        <li><a href="/aviso-legal/#cookies">Política de cookies</a></li>
+        <li><a href="/aviso-legal/#afiliados">Afiliados</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 2cerezas.es — Todos los derechos reservados</span>
+    <span>Hecho con 🍒 y mucha honestidad</span>
+  </div>
+</footer>
+
+</body>
+</html>
