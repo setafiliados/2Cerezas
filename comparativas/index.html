@@ -12,7 +12,7 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Comparativas de Juguetes Sexuales 2026 — Rankings honestos | 2cerezas</title>
+<title>Comparativas de Juguetes Sexuales 2026 | 2cerezas</title>
 <meta name="description" content="Comparativas honestas de juguetes sexuales en 2026. Rankings de succionadores, vibradores, juguetes para parejas y más. Sin publicidad encubierta.">
 <meta property="og:title" content="Comparativas de Juguetes Sexuales 2026 — 2cerezas">
 <meta property="og:description" content="Rankings honestos sin publicidad encubierta. Encuentra el mejor juguete para ti.">
@@ -125,6 +125,9 @@
     .featured-cta { display: none; }
   }
 </style>
+<style>
+@media (max-width:900px){nav{flex-wrap:wrap;gap:8px 16px}.nav-links{display:flex!important;gap:16px;order:3;width:100%;justify-content:center}.nav-cta{display:none!important}}
+</style>
 </head>
 <body>
 
@@ -132,10 +135,9 @@
   <a class="logo" href="/">🍒 <span>2</span>cerezas</a>
   <ul class="nav-links">
     <li><a href="/comparativas/" style="color:var(--cream)">Comparativas</a></li>
-    <li><a href="/#blog">Guías</a></li>
-    <li><a href="/#consultorio">Consultorio</a></li>
+    <li><a href="/guias/">Guías</a></li>
   </ul>
-  <a class="nav-cta" href="/#comparativas">Ver rankings</a>
+  <a class="nav-cta" href="/comparativas/">Ver rankings</a>
 </nav>
 
 <!-- HERO -->
@@ -147,10 +149,10 @@
     </div>
     <p class="cat-eyebrow">Rankings honestos · Sin publicidad encubierta</p>
     <h1>Comparativas de <em>2026</em></h1>
-    <p>Analizamos los productos que más se venden para decirte cuál merece tu dinero y cuál no. Sin afiliaciones que distorsionen la opinión.</p>
+    <p>Analizamos los productos que más se venden para decirte cuál merece tu dinero y cuál no. Si compras desde nuestros enlaces recibimos una comisión, pero no cambia nuestras recomendaciones.</p>
     <div class="stats-row">
       <div class="stat"><div class="stat-value">6</div><div class="stat-label">Productos analizados</div></div>
-      <div class="stat"><div class="stat-value">2</div><div class="stat-label">Comparativas publicadas</div></div>
+      <div class="stat"><div class="stat-value">3</div><div class="stat-label">Comparativas publicadas</div></div>
       <div class="stat"><div class="stat-value">3</div><div class="stat-label">En preparación</div></div>
     </div>
   </div>
@@ -161,11 +163,11 @@
   <div class="filter-bar-inner">
     <span class="filter-label">Filtrar:</span>
     <a class="filter-pill active" href="/comparativas/">Todos</a>
-    <a class="filter-pill" href="#">Succionadores</a>
-    <a class="filter-pill" href="#">Vibradores</a>
-    <a class="filter-pill" href="#">Parejas</a>
-    <a class="filter-pill" href="#">Para ellos</a>
-    <a class="filter-pill" href="#">Con app</a>
+    <a class="filter-pill" href="/comparativas/mejor-succionador-clitoris-2026/">Succionadores</a>
+    <a class="filter-pill" href="/comparativas/vibradores-con-app-2026/">Vibradores</a>
+    <a class="filter-pill" href="/comparativas/juguetes-para-parejas-2026/">Parejas</a>
+    <a class="filter-pill" href="/guias/juguetes-sexuales-masculinos/">Para ellos</a>
+    <a class="filter-pill" href="/comparativas/vibradores-con-app-2026/">Con app</a>
   </div>
 </div>
 
@@ -266,20 +268,11 @@
 
   </div>
 
-  <!-- CTA NEWSLETTER -->
-  <div class="cta-banner">
-    <h3>Avísame cuando salga <em>la siguiente</em></h3>
-    <p>Publicamos una comparativa nueva cada dos semanas. Sin spam, solo el aviso cuando esté lista.</p>
-    <div class="cta-form">
-      <input type="email" placeholder="tu@email.com">
-      <button type="button">Avisarme</button>
-    </div>
-  </div>
-
 </div>
 
 <footer>
   <div class="footer-disclaimer">
+    🔞 <strong>Solo para mayores de 18 años.</strong> Este sitio contiene contenido para adultos.<br>
     🔗 <strong>Aviso de afiliados:</strong> 2cerezas.es participa en el Programa de Afiliados de Amazon EU. Algunos enlaces de esta web son de afiliado — si compras a través de ellos recibimos una comisión sin coste adicional para ti. Esto no influye en nuestras recomendaciones.
   </div>
   <div class="footer-bottom">
@@ -288,5 +281,9 @@
   </div>
 </footer>
 
+<script>
+/* Medición de clics a Amazon y CTAs */
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="amazon.es"]');if(!a)return;var m=a.href.match(/\/dp\/([A-Z0-9]{10})/);var card=a.closest('[id]');if(typeof gtag==='function'){gtag('event','clic_amazon',{asin:m?m[1]:'',producto:card?card.id:'',pagina:location.pathname,texto:(a.textContent||'').trim().slice(0,40),transport_type:'beacon'});}});
+</script>
 </body>
 </html>

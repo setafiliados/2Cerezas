@@ -65,6 +65,9 @@
 
   @media (max-width: 640px) { .nav-links, .nav-cta { display: none; } }
 </style>
+<style>
+@media (max-width:900px){nav{flex-wrap:wrap;gap:8px 16px}.nav-links{display:flex!important;gap:16px;order:3;width:100%;justify-content:center}.nav-cta{display:none!important}}
+</style>
 </head>
 <body>
 
@@ -72,8 +75,7 @@
   <a class="logo" href="/">🍒 <span>2</span>cerezas</a>
   <ul class="nav-links">
     <li><a href="/comparativas/">Comparativas</a></li>
-    <li><a href="/#blog">Guías</a></li>
-    <li><a href="/#consultorio">Consultorio</a></li>
+    <li><a href="/guias/">Guías</a></li>
   </ul>
   <a class="nav-cta" href="/comparativas/">Ver rankings</a>
 </nav>
@@ -210,5 +212,9 @@
   </div>
 </footer>
 
+<script>
+/* Medición de clics a Amazon y CTAs */
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="amazon.es"]');if(!a)return;var m=a.href.match(/\/dp\/([A-Z0-9]{10})/);var card=a.closest('[id]');if(typeof gtag==='function'){gtag('event','clic_amazon',{asin:m?m[1]:'',producto:card?card.id:'',pagina:location.pathname,texto:(a.textContent||'').trim().slice(0,40),transport_type:'beacon'});}});
+</script>
 </body>
 </html>

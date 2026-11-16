@@ -135,6 +135,9 @@
     .consultorio-teaser { grid-template-columns: 1fr; }
   }
 </style>
+<style>
+@media (max-width:900px){nav{flex-wrap:wrap;gap:8px 16px}.nav-links{display:flex!important;gap:16px;order:3;width:100%;justify-content:center}.nav-cta{display:none!important}}
+</style>
 </head>
 <body>
 
@@ -143,7 +146,6 @@
   <ul class="nav-links">
     <li><a href="/comparativas/">Comparativas</a></li>
     <li><a href="/guias/" class="active">Guías</a></li>
-    <li><a href="/#consultorio">Consultorio</a></li>
   </ul>
   <a class="nav-cta" href="/comparativas/">Ver rankings</a>
 </nav>
@@ -161,7 +163,6 @@
     <div class="stats-row">
       <div class="stat"><div class="stat-value">2</div><div class="stat-label">Guías publicadas</div></div>
       <div class="stat"><div class="stat-value">4</div><div class="stat-label">En preparación</div></div>
-      <div class="stat"><div class="stat-value">∞</div><div class="stat-label">Preguntas en el consultorio</div></div>
     </div>
   </div>
 </div>
@@ -171,11 +172,11 @@
   <div class="filter-bar-inner">
     <span class="filter-label">Tema:</span>
     <a class="filter-pill active" href="/guias/">Todas</a>
-    <a class="filter-pill" href="#">Principiantes</a>
-    <a class="filter-pill" href="#">Parejas</a>
-    <a class="filter-pill" href="#">Salud sexual</a>
-    <a class="filter-pill" href="#">Materiales</a>
-    <a class="filter-pill" href="#">Para ellos</a>
+    <a class="filter-pill" href="/guias/como-elegir-primer-juguete-sexual/">Principiantes</a>
+    <a class="filter-pill" href="/comparativas/juguetes-para-parejas-2026/">Parejas</a>
+    
+    
+    <a class="filter-pill" href="/guias/juguetes-sexuales-masculinos/">Para ellos</a>
   </div>
 </div>
 
@@ -324,29 +325,11 @@
 
   </div>
 
-  <!-- CONSULTORIO TEASER -->
-  <div class="consultorio-teaser">
-    <div>
-      <h3>¿Tienes una pregunta que no encuentras <em>en ningún sitio</em>?</h3>
-      <p>En el Consultorio de 2cerezas puedes preguntar lo que no te atreves a buscar en Google. De forma anónima, sin juicios, y con respuestas reales.</p>
-    </div>
-    <a class="btn-consultorio" href="/#consultorio">Ir al consultorio →</a>
-  </div>
-
-  <!-- NEWSLETTER -->
-  <div class="cta-banner">
-    <h3>Avísame cuando salga <em>la siguiente guía</em></h3>
-    <p>Una nueva guía cada dos semanas. Sin spam, solo el aviso cuando esté lista.</p>
-    <div class="cta-form">
-      <input type="email" placeholder="tu@email.com">
-      <button type="button">Avisarme</button>
-    </div>
-  </div>
-
 </div>
 
 <footer>
   <div class="footer-disclaimer">
+    🔞 <strong>Solo para mayores de 18 años.</strong> Este sitio contiene contenido para adultos.<br>
     🔗 <strong>Aviso de afiliados:</strong> 2cerezas.es participa en el Programa de Afiliados de Amazon EU. Algunos enlaces de esta web son de afiliado — si compras a través de ellos recibimos una comisión sin coste adicional para ti.
   </div>
   <div class="footer-bottom">
@@ -355,5 +338,9 @@
   </div>
 </footer>
 
+<script>
+/* Medición de clics a Amazon y CTAs */
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="amazon.es"]');if(!a)return;var m=a.href.match(/\/dp\/([A-Z0-9]{10})/);var card=a.closest('[id]');if(typeof gtag==='function'){gtag('event','clic_amazon',{asin:m?m[1]:'',producto:card?card.id:'',pagina:location.pathname,texto:(a.textContent||'').trim().slice(0,40),transport_type:'beacon'});}});
+</script>
 </body>
 </html>
