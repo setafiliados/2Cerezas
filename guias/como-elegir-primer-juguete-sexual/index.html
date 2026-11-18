@@ -232,6 +232,22 @@
     .pick-card { flex-direction: column; }
     .pick-price { text-align: left; }
   }
+
+  /* QUICK PICK */
+  .quick-pick { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 28px; margin: 40px 0; }
+  .quick-pick-title { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cherry); margin-bottom: 20px; }
+  .quick-pick-item { display: flex; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--border); text-decoration: none; color: inherit; transition: opacity 0.2s; }
+  .quick-pick-item:last-child { border-bottom: none; padding-bottom: 0; }
+  .quick-pick-item:hover { opacity: 0.85; }
+  .qp-rank { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 900; color: var(--cherry); opacity: 0.3; min-width: 32px; line-height: 1; }
+  .qp-info { flex: 1; }
+  .qp-name { font-size: 0.95rem; font-weight: 600; color: var(--cream); margin-bottom: 3px; }
+  .qp-for { font-size: 0.8rem; color: var(--muted); }
+  .qp-badge { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 10px; border-radius: 100px; white-space: nowrap; }
+  .badge-best { background: var(--cherry-lo); color: var(--cherry); border: 1px solid var(--cherry-md); }
+  .badge-value { background: var(--green-lo); color: var(--green); border: 1px solid #4caf7d44; }
+  .badge-premium { background: #d4956a18; color: var(--gold); border: 1px solid #d4956a44; }
+  .badge-couples { background: #7a6aff18; color: #a09aff; border: 1px solid #7a6aff44; }
 </style>
 <style>
 @media (max-width:900px){nav{flex-wrap:wrap;gap:6px 16px;height:auto!important;padding-top:12px!important;padding-bottom:12px!important}.nav-links{display:flex!important;gap:16px;order:3;width:100%;justify-content:center}.nav-cta{display:none!important}}
